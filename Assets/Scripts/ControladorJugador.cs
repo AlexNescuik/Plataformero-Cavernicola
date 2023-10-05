@@ -33,12 +33,12 @@ public class ControladorJugador : MonoBehaviour
         }
         else if (movHor < 0)
         {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
             miCuerpo.velocity = new Vector3(-velocidadCaminar, velVert, 0);
             miAnimador.SetBool("Caminando", true);
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
             miCuerpo.velocity = new Vector3(0, velVert, 0);
             miAnimador.SetBool("Caminando", false);
 
