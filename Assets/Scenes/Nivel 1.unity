@@ -1270,7 +1270,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &215928917
 GameObject:
@@ -1656,7 +1656,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b705d8ad137c9f44ab376cf031bc2a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splashAguaPrefab: {fileID: 799438294}
+  splashAguaPrefab: {fileID: 0}
+  corazonRotoPrefab: {fileID: 0}
 --- !u!224 &245782647 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6839803061248681648, guid: 1228b2c5750b0144ca23d7c462cbdf5c, type: 3}
@@ -1979,11 +1980,51 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &799438294 stripped
+--- !u!1 &646971751 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8205706795460263314, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-  m_PrefabInstance: {fileID: 1871327709}
+  m_CorrespondingSourceObject: {fileID: 5381167736742778363, guid: 6ba1c150a3ee525479c7e19012e86319, type: 3}
+  m_PrefabInstance: {fileID: 1544499721}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &646971756
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646971751}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.017943382, y: 0.017943144}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 1}
+    newSize: {x: 2, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9305725, y: 0.8205657}
+  m_EdgeRadius: 0
+--- !u!114 &646971757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646971751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c12d3a0c1f0a4248a98c8eacad4053f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sangreDanoPrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  coraRotoPrefab: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
 --- !u!1 &809783201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,7 +2122,7 @@ RectTransform:
   - {fileID: 1435809464}
   - {fileID: 245782647}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2671,7 +2712,7 @@ Transform:
   - {fileID: 215928918}
   - {fileID: 136361107}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1435809464 stripped
 RectTransform:
@@ -2733,6 +2774,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrampaHuesos
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: coraRotoPrefab
+      value: 
+      objectReference: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sangreDanoPrefab
+      value: 
+      objectReference: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ba1c150a3ee525479c7e19012e86319, type: 3}
 --- !u!114 &1614094589 stripped
@@ -2833,91 +2882,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870135584}
   m_CullTransparentMesh: 0
---- !u!1001 &1871327709
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1088917795622899560, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4171292344760214109, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051882452526668056, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763927699046721764, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6995490606234323338, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263314, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_Name
-      value: CFXR Water Splash (Smaller)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263315, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8205706795460263317, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303992366066500842, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
 --- !u!1 &1960263032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3744,7 +3708,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &2049498399
 PolygonCollider2D:

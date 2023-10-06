@@ -5,6 +5,7 @@ using UnityEngine;
 public class ZonaMuerte : MonoBehaviour
 {
     public GameObject splashAguaPrefab;
+    public GameObject corazonRotoPrefab;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,6 +18,9 @@ public class ZonaMuerte : MonoBehaviour
 
             GameObject efectoSplash = Instantiate(splashAguaPrefab);
             efectoSplash.transform.position = elPerso.transform.position;
+
+            GameObject efectoCoraRoto = Instantiate(corazonRotoPrefab);
+            efectoCoraRoto.transform.position = elPerso.transform.position;
         }
         
     }
