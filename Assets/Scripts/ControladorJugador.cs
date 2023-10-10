@@ -7,6 +7,7 @@ public class ControladorJugador : MonoBehaviour
     public float velocidadCaminar = 5;
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
+    private EfectosSonoros misSonidos;
     public float fuerzaSalto = 10f;
 
 
@@ -16,6 +17,7 @@ public class ControladorJugador : MonoBehaviour
     {
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
+        misSonidos = GetComponent<EfectosSonoros>();
     }
 
     // Update is called once per frame
@@ -46,9 +48,12 @@ public class ControladorJugador : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             miCuerpo.AddForce(transform.up * fuerzaSalto, ForceMode2D.Impulse);
+
+            misSonidos.reproducir("salto");
         }
 
         miAnimador.SetFloat("VEL_VERT", velVert);
+
 
     }
 }
