@@ -9,10 +9,11 @@ public class Trampa : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     { //detecta colisión
+        print(name + " detecté colisión con " + collision.gameObject);
+
         GameObject otroObjeto = collision.gameObject;
         if (otroObjeto.tag == "Player")
         {
-            print(name + " detecté colisión con " + otroObjeto);
 
             Personaje elPerso = otroObjeto.GetComponent<Personaje>();
             elPerso.hacerDano(20, this.gameObject);
