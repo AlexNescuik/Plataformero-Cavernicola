@@ -6,6 +6,7 @@ public class Trampa : MonoBehaviour
 {
     public GameObject sangreDanoPrefab;
     public GameObject coraRotoPrefab;
+    private EfectosSonoros misSonidos;
 
     private void OnCollisionEnter2D(Collision2D collision)
     { //detecta colisión
@@ -17,6 +18,7 @@ public class Trampa : MonoBehaviour
 
             Personaje elPerso = otroObjeto.GetComponent<Personaje>();
             elPerso.hacerDano(20, this.gameObject);
+            misSonidos.reproducir("dano");
 
             GameObject efectoSangre = Instantiate(sangreDanoPrefab);
             efectoSangre.transform.position = elPerso.transform.position;
@@ -25,6 +27,7 @@ public class Trampa : MonoBehaviour
             {
                 GameObject efectoCoraRoto = Instantiate(coraRotoPrefab);
                 efectoCoraRoto.transform.position = elPerso.transform.position;
+                misSonidos.reproducir("muerte");
             }
         }
     }
@@ -32,7 +35,7 @@ public class Trampa : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        misSonidos = GetComponent<EfectosSonoros>();
     }
 
     // Update is called once per frame

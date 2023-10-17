@@ -6,7 +6,7 @@ public class ZonaMuerte : MonoBehaviour
 {
     public GameObject splashAguaPrefab;
     public GameObject corazonRotoPrefab;
-
+    private EfectosSonoros misSonidos;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,9 +15,12 @@ public class ZonaMuerte : MonoBehaviour
         {
             Personaje elPerso = otroObjeto.GetComponent<Personaje>();
             elPerso.matarInstantaneamente(this.gameObject);
+            misSonidos.reproducir("muerte");
 
             GameObject efectoSplash = Instantiate(splashAguaPrefab);
             efectoSplash.transform.position = elPerso.transform.position;
+            misSonidos.reproducir("splash");
+
 
             GameObject efectoCoraRoto = Instantiate(corazonRotoPrefab);
             efectoCoraRoto.transform.position = elPerso.transform.position;
@@ -29,7 +32,7 @@ public class ZonaMuerte : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        misSonidos = GetComponent<EfectosSonoros>();
     }
 
     // Update is called once per frame

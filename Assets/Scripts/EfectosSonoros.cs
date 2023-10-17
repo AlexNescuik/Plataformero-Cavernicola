@@ -35,7 +35,6 @@ public class EfectosSonoros : MonoBehaviour
     public class Efecto
     {
         public string accion;
-        public AudioClip sonido;
-        
+        public AudioClip sonido;        
     }
 }
