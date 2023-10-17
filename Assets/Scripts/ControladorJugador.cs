@@ -51,6 +51,11 @@ public class ControladorJugador : MonoBehaviour
 
             misSonidos.reproducir("salto");
         }
+        else if (Input.GetButton("Fire1"))
+        {
+            miAnimador.SetTrigger("GOLPEAR");
+        }
+
 
         miAnimador.SetFloat("VEL_VERT", velVert);
 
