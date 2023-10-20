@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 7622316369696226952}
   - component: {fileID: 7622316369696226953}
   - component: {fileID: 7622316369696226957}
+  - component: {fileID: 1742209751}
+  - component: {fileID: 1742209750}
   m_Layer: 0
   m_Name: Honguito
   m_TagString: Enemigo
@@ -32,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 7622316369696226949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.79, y: 0.44, z: 0}
-  m_LocalScale: {x: 3.4332025, y: 3.4332025, z: 3.4332025}
+  m_LocalScale: {x: 5.6658144, y: 5.6658144, z: 5.6658144}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -140,8 +142,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00092268863, y: -0.06828084}
-  m_Size: {x: 0.316956, y: 0.23760365}
+  m_Offset: {x: -0.00092261616, y: -0.065565884}
+  m_Size: {x: 0.3549653, y: 0.24303357}
   m_Direction: 1
 --- !u!70 &7622316369696226952
 CapsuleCollider2D:
@@ -194,4 +196,115 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   honguito: {fileID: 7622316369696226955}
   cavernicola: {fileID: 0}
-  velocidadCaminar: 5
+  velocidadCaminar: 2
+--- !u!82 &1742209751
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7622316369696226949}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1742209750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7622316369696226949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81dca7e9050186f49846da35c07b9a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misEfectos:
+  - accion: danoEne
+    sonido: {fileID: 8300000, guid: 89b83476ec2086a42bdb4058371fa064, type: 3}
