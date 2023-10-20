@@ -901,5 +901,9 @@ PrefabInstance:
       propertyPath: cavernicola
       value: 
       objectReference: {fileID: 1730055417}
+    - target: {fileID: 7622316369696226957, guid: bbbfbbecdbe8d1b49b46e326f8ea50e8, type: 3}
+      propertyPath: velocidadCaminar
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbbfbbecdbe8d1b49b46e326f8ea50e8, type: 3}

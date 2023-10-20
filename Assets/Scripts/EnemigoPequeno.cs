@@ -12,59 +12,60 @@ public class EnemigoPequeno : MonoBehaviour
     private EfectosSonoros misSonidos;
     private bool cerca;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        GameObject enemigo = collision.gameObject;
-        if (enemigo.tag == "Player")
-        {
-            print(name + " el enemigo está cerca " +  enemigo);
-            cerca = true;
-
-        }
-             
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        GameObject enemigo = collision.gameObject;
-        if (enemigo.tag == "Player")
-        {
-            print(name + " el enemigo está lejos " + enemigo);
-            cerca = false;
-        }
-    }
+    
         // Start is called before the first frame update
-        void Start()
+    void Start()
     {
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
     }
+    
+    //ejecución
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        GameObject otro = collision.gameObject;
+        if (otro.tag == "Player")
+        {
+            print(name + " el enemigo está cerca " + otro);
+            cerca = true;
+
+            if (otro.transform.position.x < this.transform.position.x)
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+        }
+
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            print(collision.gameObject.name + " lejos de " + name);
+            cerca = false;
+        }
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        float velVert = miCuerpo.velocity.y;
-        if (cerca == true)
+        if (cerca)
         {
-            if (cavernicola.position.x < honguito.position.x)
-            {
-                transform.rotation = Quaternion.Euler(0, 0, 0);
-                miCuerpo.velocity = new Vector3(-velocidadCaminar, 0, 0);
-                miAnimador.SetBool("Caminando", true);
-            }
-            else if (honguito.position.x < cavernicola.position.x)
-            {
-                transform.rotation = Quaternion.Euler(0, 180, 0);
-                miCuerpo.velocity = new Vector3(velocidadCaminar, 0, 0);
-                miAnimador.SetBool("Caminando", true);
-                
-            }
-            else
-            {
-                miCuerpo.velocity = new Vector3(0, velVert, 0);
-                miAnimador.SetBool("Caminando", false);
-            }
+            miCuerpo.velocity = transform.right * velocidadCaminar;
+            miAnimador.SetBool("caminando", true);
         }
-        miAnimador.SetFloat("VEL_VERT", velVert);
+        else
+        {
+            miCuerpo.velocity = Vector3.zero;
+            miAnimador.SetBool("caminando", false);
+        }
     }
+
+   
 
 }
