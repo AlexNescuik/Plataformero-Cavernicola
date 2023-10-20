@@ -10,7 +10,7 @@ public class EnemigoPequeno : MonoBehaviour
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
     private EfectosSonoros misSonidos;
-    private bool cerca;
+    private bool cerca = false;
 
     
         // Start is called before the first frame update
@@ -24,13 +24,13 @@ public class EnemigoPequeno : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        GameObject otro = collision.gameObject;
-        if (otro.tag == "Player")
+        GameObject enemigo = collision.gameObject;
+        if (enemigo.tag == "Player")
         {
-            print(name + " el enemigo está cerca " + otro);
+            print(enemigo.name + " cerca de " + enemigo);
             cerca = true;
 
-            if (otro.transform.position.x < this.transform.position.x)
+            if (enemigo.transform.position.x < this.transform.position.x)
             {
                 transform.rotation = Quaternion.Euler(0, 180, 0);
             }
