@@ -12,8 +12,10 @@ public class EnemigoPequeno : MonoBehaviour
     private EfectosSonoros misSonidos;
     private bool cerca = false;
 
-    
-        // Start is called before the first frame update
+    public GameObject sangreDanoPrefab;
+
+
+    // Start is called before the first frame update
     void Start()
     {
         miCuerpo = GetComponent<Rigidbody2D>();
@@ -50,6 +52,22 @@ public class EnemigoPequeno : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    { //detecta colisión
+        print(name + " detecté colisión con " + collision.gameObject);
+
+        GameObject otroObjeto = collision.gameObject;
+        if (otroObjeto.tag == "Player")
+        {
+
+            Personaje elPerso = otroObjeto.GetComponent<Personaje>();
+            elPerso.hacerDano(20, this.gameObject);
+            misSonidos.reproducir("dano");
+
+            GameObject efectoSangre = Instantiate(sangreDanoPrefab);
+            efectoSangre.transform.position = elPerso.transform.position;
+        }
+    }
 
     // Update is called once per frame
     void Update()
