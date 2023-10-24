@@ -9,14 +9,21 @@ public class Personaje : MonoBehaviour
     public int hpMax = 100;
     public int vidas = 2;
     public int score = 0;
+
+    public bool bloqueado = false;
+
     private Animator miAnimador;
     private Rigidbody2D miCuerpo;
+    private Personaje miPersonaje;
+    public static int vida;
+
 
     // Start is called before the first frame update
     void Start()
     {
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
+        miPersonaje = GetComponent<Personaje>();
     }
 
     // Update is called once per frame
@@ -25,33 +32,47 @@ public class Personaje : MonoBehaviour
 
     }
 
+    public bool estaVivo()
+    {
+        return hp > 0;
+
+    }
+
+    private void desbloquear()
+    {
+        bloqueado = false;
+    }
 
     public void hacerDano(int puntosDano, GameObject enemigo)
     {
-        hp = hp - puntosDano;
-        print(name + " recibe daño de " + puntosDano + " por " + enemigo);
-        miAnimador.SetTrigger("DANAR");
-        if (hp <= 0)
+        bool puedoMoverme = miPersonaje.estaVivo() && !miPersonaje.bloqueado;
+
+        if (miPersonaje.estaVivo())
         {
-            miAnimador.SetTrigger("MORIR");
-        }
-        else
-        {
+
+            hp = hp - puntosDano;
+            bloqueado = true;
+            //durante 1.2 segs e va a ejecutar un método llamado "desbloquear"
+            Invoke("desbloquear", 1.2f);
+
+            print(name + " recibe daño de " + puntosDano + " por " + enemigo);
             miAnimador.SetTrigger("DANAR");
+            if (hp <= 0)
+            {
+                miAnimador.SetTrigger("MORIR");
+                vidas--;
+            }
+            else
+            {
+                miAnimador.SetTrigger("DANAR");
+            }
         }
     }
-
-    public void matarInstantaneamente(GameObject quien)
-    {
-        print(name + " murió instantaneamente por " + quien);
-        hp = 0;
+        public void matarInstantaneamente(GameObject quien)
+        {
+            print(name + " murió instantaneamente por " + quien);
+            hp = 0;
             miAnimador.SetTrigger("MORIR");
-    }
+        }
 
-    public void matar(GameObject atacante)
-    {
-        print(name + " muere a manos de " + atacante);
-        hp = 0;
-        vidas--;
-    }
 }

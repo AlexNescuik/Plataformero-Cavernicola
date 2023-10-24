@@ -8,6 +8,7 @@ public class EnemigoPequeno : MonoBehaviour
     public Transform Hongo;
 
     public float velocidadCaminar = 5;
+    public float rangoAgro = 3;
     private bool cerca = false;
     private bool lejos;
 
@@ -15,11 +16,12 @@ public class EnemigoPequeno : MonoBehaviour
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
     private EfectosSonoros misSonidos;
+    private Personaje miPersonaje;
     private GameObject heroeJugador;
 
     public GameObject SangrePrefab;
     public GameObject corazonRotoPrefab;
-    public float rangoAgro = 3;
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,9 +34,6 @@ public class EnemigoPequeno : MonoBehaviour
 
 
         }
-
-
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -51,59 +50,67 @@ public class EnemigoPequeno : MonoBehaviour
     {
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
+        miPersonaje = GetComponent<Personaje>();
 
         heroeJugador = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
-
     {
-        Vector3 miPos = this.transform.position;
+        bool puedoMoverme = miPersonaje.estaVivo() && !miPersonaje.bloqueado;
 
-        Vector3 posHeroe = heroeJugador.transform.position;
-
-        float distanciaHeroe = (miPos - posHeroe).magnitude;
-
-
-        if (distanciaHeroe < rangoAgro)
+        if (miPersonaje.estaVivo())
         {
-            cerca = true;
-        }
-
-        else
-        {
-            cerca = false;
-        }
 
 
-        if (cerca == true)
-        {
-            if (Cavernicola.position.x < Hongo.position.x)
+
+            Vector3 miPos = this.transform.position;
+
+            Vector3 posHeroe = heroeJugador.transform.position;
+
+            float distanciaHeroe = (miPos - posHeroe).magnitude;
+
+
+            if (distanciaHeroe < rangoAgro)
             {
-                transform.rotation =
-                Quaternion.Euler(0, 180, 0);
-                miCuerpo.velocity =
-                    new Vector3(-velocidadCaminar, 0, 0);
-                miAnimador.SetBool("caminando", true);
+                cerca = true;
             }
 
-            else if (Hongo.position.x < Cavernicola.position.x)
+            else
             {
-                transform.rotation =
-                               Quaternion.Euler(0, 0, 0);
-                miCuerpo.velocity =
-                   new Vector3(velocidadCaminar, 0, 0);
-                miAnimador.SetBool("caminando", true);
+                cerca = false;
             }
 
-        }
 
-        else
-        {
-            miAnimador.SetBool("caminando", false);
-        }
+            if (cerca == true)
+            {
+                if (Cavernicola.position.x < Hongo.position.x)
+                {
+                    transform.rotation =
+                    Quaternion.Euler(0, 180, 0);
+                    miCuerpo.velocity =
+                        new Vector3(-velocidadCaminar, 0, 0);
+                    miAnimador.SetBool("caminando", true);
+                }
 
+                else if (Hongo.position.x < Cavernicola.position.x)
+                {
+                    transform.rotation =
+                                    Quaternion.Euler(0, 0, 0);
+                    miCuerpo.velocity =
+                        new Vector3(velocidadCaminar, 0, 0);
+                    miAnimador.SetBool("caminando", true);
+                }
+
+            }
+
+            else
+            {
+                miAnimador.SetBool("caminando", false);
+            }
+        }
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     { //Este metodo se ejecuta cuando este objeto detecta una colision
@@ -132,11 +139,6 @@ public class EnemigoPequeno : MonoBehaviour
                 GameObject efectoCorazon = Instantiate(corazonRotoPrefab);
                 efectoCorazon.transform.position = elPerso.transform.position;
             }
-
-
         }
     }
-
-
-
 }

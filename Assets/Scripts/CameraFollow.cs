@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform cavernicola;
+    public Personaje elPersonaje;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(
-            cavernicola.position.x,
-            cavernicola.position.y,
-            -1);
-
+        if (elPersonaje.estaVivo())
+        {
+            transform.position = new Vector3(elPersonaje.transform.position.x, elPersonaje.transform.position.y, -1);
+        }
     }
 }
 
