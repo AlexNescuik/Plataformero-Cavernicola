@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 541612608}
   - component: {fileID: 541612607}
   - component: {fileID: 541612609}
+  - component: {fileID: 541612610}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemigo
@@ -349,7 +350,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!212 &541612605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -410,7 +411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541612599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.04, y: 0.95, z: 0}
+  m_LocalPosition: {x: 2.14, y: 0.92, z: 0}
   m_LocalScale: {x: 0.34768164, y: 0.34768164, z: 0.34768164}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -430,17 +431,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cavernicola: {fileID: 127729594}
-  Honguito: {fileID: 281989906}
-  Golem: {fileID: 945023555}
-  Rata: {fileID: 2062532703}
-  Bat: {fileID: 541612606}
+  Hongo: {fileID: 541612606}
   velocidadCaminar: 2
-  rangoAgro: 3
-  distanciaAtaque: 2
-  puntosDano: 30
-  cerca: 0
-  sangreDanoPrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
-  coraRotoPrefab: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
+  SangrePrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  corazonRotoPrefab: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
+  rangoAgro: 0
 --- !u!114 &541612608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,6 +473,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &541612610
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541612599}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.541712, y: -0.28241205}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 12.8, y: 12.8}
+    newSize: {x: 12.8, y: 12.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.3764105, y: 2.0683231}
+  m_EdgeRadius: 0
 --- !u!1001 &753979254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1116,10 +1137,11 @@ GameObject:
   - component: {fileID: 945023553}
   - component: {fileID: 945023559}
   - component: {fileID: 945023558}
-  - component: {fileID: 945023557}
   - component: {fileID: 945023556}
   - component: {fileID: 945023561}
   - component: {fileID: 945023560}
+  - component: {fileID: 945023562}
+  - component: {fileID: 945023563}
   m_Layer: 0
   m_Name: Golem
   m_TagString: Enemigo
@@ -1207,9 +1229,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945023552}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.55, y: 3.37, z: 0}
-  m_LocalScale: {x: 0.4503184, y: 0.4503184, z: 0.4503184}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.89, y: 1.05, z: 0}
+  m_LocalScale: {x: 0.45031837, y: 0.45031837, z: 0.45031837}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1231,30 +1253,6 @@ MonoBehaviour:
   hpMax: 100
   vidas: 2
   score: 0
---- !u!114 &945023557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945023552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2fa9d4dc06597c42879a20cf9f077fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cavernicola: {fileID: 0}
-  Honguito: {fileID: 0}
-  Golem: {fileID: 0}
-  Rata: {fileID: 0}
-  Bat: {fileID: 0}
-  velocidadCaminar: 2
-  rangoAgro: 5
-  distanciaAtaque: 2
-  puntosDano: 30
-  cerca: 0
-  sangreDanoPrefab: {fileID: 0}
-  coraRotoPrefab: {fileID: 0}
 --- !u!50 &945023558
 Rigidbody2D:
   serializedVersion: 4
@@ -1275,7 +1273,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!70 &945023559
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1304,7 +1302,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81dca7e9050186f49846da35c07b9a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misEfectos: []
+  misEfectos:
+  - accion: dano
+    sonido: {fileID: 8300000, guid: 89b83476ec2086a42bdb4058371fa064, type: 3}
+  - accion: muerte
+    sonido: {fileID: 8300000, guid: 0a15527e5c08f664481212699c5a91c9, type: 3}
 --- !u!82 &945023561
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1401,6 +1403,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &945023562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945023552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea6106a9956f804ba87d999089ba1ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cavernicola: {fileID: 127729594}
+  Hongo: {fileID: 945023555}
+  velocidadCaminar: 2
+  distanciaAtaque: 2
+  rangoAgro: 0
+  SangrePrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  corazonRotoPrefab: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
+--- !u!61 &945023563
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945023552}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.9705038, y: -0.65413475}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 12.8, y: 12.8}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.1809366, y: 3.0870876}
+  m_EdgeRadius: 0
 --- !u!1 &1770583589
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1595,7 @@ GameObject:
   - component: {fileID: 2062532697}
   - component: {fileID: 2062532696}
   - component: {fileID: 2062532704}
+  - component: {fileID: 2062532705}
   m_Layer: 0
   m_Name: Rata
   m_TagString: Enemigo
@@ -1692,18 +1740,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fa9d4dc06597c42879a20cf9f077fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cavernicola: {fileID: 0}
-  Honguito: {fileID: 0}
-  Golem: {fileID: 0}
-  Rata: {fileID: 0}
-  Bat: {fileID: 0}
+  Cavernicola: {fileID: 127729594}
+  Hongo: {fileID: 2062532703}
   velocidadCaminar: 2
-  rangoAgro: 3
-  distanciaAtaque: 2
-  puntosDano: 30
-  cerca: 0
-  sangreDanoPrefab: {fileID: 0}
-  coraRotoPrefab: {fileID: 0}
+  SangrePrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  corazonRotoPrefab: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
+  rangoAgro: 0
 --- !u!70 &2062532700
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1828,7 +1870,33 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
+--- !u!61 &2062532705
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062532695}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.82122254, y: -0.8212225}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.266667, y: 4.266667}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6961341, y: 0.6247231}
+  m_EdgeRadius: 0
 --- !u!1001 &5381167736498614394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1945,5 +2013,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7622316369696226957, guid: bbbfbbecdbe8d1b49b46e326f8ea50e8, type: 3}
+      propertyPath: Honguito
+      value: 
+      objectReference: {fileID: 281989906}
+    - target: {fileID: 7622316369696226957, guid: bbbfbbecdbe8d1b49b46e326f8ea50e8, type: 3}
+      propertyPath: Cavernicola
+      value: 
+      objectReference: {fileID: 127729594}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbbfbbecdbe8d1b49b46e326f8ea50e8, type: 3}
