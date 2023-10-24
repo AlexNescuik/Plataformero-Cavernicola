@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class EnemigoPequeno : MonoBehaviour
 {
-    public Transform honguito;
-    public Transform cavernicola;
+    public Transform Cavernicola;
+    public Transform Honguito;
+    public Transform Golem;
+    public Transform Rata;
+    public Transform Bat;
+
     public float velocidadCaminar = 2;
+    public float rangoAgro = 3;
+    public float distanciaAtaque = 2;
+    public int puntosDano = 30;
+    public bool cerca = false;
+    private GameObject heroeJugador;
+
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
     private EfectosSonoros misSonidos;
-    private bool cerca = false;
 
     public GameObject sangreDanoPrefab;
+    public GameObject coraRotoPrefab;
 
 
     // Start is called before the first frame update
@@ -20,19 +30,24 @@ public class EnemigoPequeno : MonoBehaviour
     {
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
+
+        heroeJugador = GameObject.FindGameObjectWithTag("Player");
     }
     
     //ejecución
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
 
-        GameObject enemigo = collision.gameObject;
-        if (enemigo.tag == "Player")
-        {
-            print(enemigo.name + " cerca de " + enemigo);
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 miPos = this.transform.position;
+        Vector3 posHeroe = heroeJugador.transform.position;
+        float distanciaHeroe = (miPos - posHeroe).magnitude;
+        if (distanciaHeroe < rangoAgro)
+       {
+            print(heroeJugador.name + " cerca de " + name);
             cerca = true;
 
-            if (enemigo.transform.position.x < this.transform.position.x)
+            if (heroeJugador.transform.position.x < this.transform.position.x)
             {
                 transform.rotation = Quaternion.Euler(0, 180, 0);
             }
@@ -41,38 +56,11 @@ public class EnemigoPequeno : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
-
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
+        else
         {
-            print(collision.gameObject.name + " lejos de " + name);
             cerca = false;
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    { //detecta colisión
-        print(name + " detecté colisión con " + collision.gameObject);
-
-        GameObject otroObjeto = collision.gameObject;
-        if (otroObjeto.tag == "Player")
-        {
-
-            Personaje elPerso = otroObjeto.GetComponent<Personaje>();
-            elPerso.hacerDano(20, this.gameObject);
-            misSonidos.reproducir("dano");
-
-            GameObject efectoSangre = Instantiate(sangreDanoPrefab);
-            efectoSangre.transform.position = elPerso.transform.position;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (cerca)
+        if(cerca)
         {
             miCuerpo.velocity = transform.right * velocidadCaminar;
             miAnimador.SetBool("caminando", true);
@@ -82,8 +70,53 @@ public class EnemigoPequeno : MonoBehaviour
             miCuerpo.velocity = Vector3.zero;
             miAnimador.SetBool("caminando", false);
         }
+        if (distanciaHeroe < distanciaAtaque)
+        {
+            miAnimador.SetTrigger("GOLPEAR");
+        }    
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameObject enemigoHonguito = collision.gameObject;
+        if(enemigoHonguito.tag == "Player")
+        {
+            print(name + " cerca de " + enemigoHonguito);
+            cerca = true;
+            Personaje elPerso = enemigoHonguito.GetComponent<Personaje>();
+            elPerso.hacerDano(puntosDano, this.gameObject);
+        }
+
+        GameObject enemigoGolem = collision.gameObject;
+        if (enemigoGolem.tag == "Player")
+        {
+            print(name + " cerca de " + enemigoGolem);
+            Personaje elPerso = enemigoGolem.GetComponent<Personaje>();
+            elPerso.hacerDano(puntosDano, this.gameObject);
+            cerca = true;
+            miAnimador.SetTrigger("GOLPEAR");
+        }
+
+        GameObject enemigoRata = collision.gameObject;
+        if (enemigoRata.tag == "Player")
+        {
+            print(name + " cerca de " + enemigoRata);
+            cerca = true;
+            Personaje elPerso = enemigoRata.GetComponent<Personaje>();
+            elPerso.hacerDano(puntosDano, this.gameObject);
+            miAnimador.SetTrigger("GOLPEAR");
+        }
+
+        GameObject enemigoBat = collision.gameObject;
+        if (enemigoBat.tag == "Player")
+        {
+            print(name + " cerca de " + enemigoBat);
+            cerca = true;
+            Personaje elPerso = enemigoBat.GetComponent<Personaje>();
+            elPerso.hacerDano(puntosDano, this.gameObject);
+            miAnimador.SetTrigger("GOLPEAR");
+        }
+    }
    
 
 }

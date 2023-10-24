@@ -46,7 +46,12 @@ public class Personaje : MonoBehaviour
         print(name + " murió instantaneamente por " + quien);
         hp = 0;
             miAnimador.SetTrigger("MORIR");
+    }
 
-       
+    public void matar(GameObject atacante)
+    {
+        print(name + " muere a manos de " + atacante);
+        hp = 0;
+        vidas--;
     }
 }

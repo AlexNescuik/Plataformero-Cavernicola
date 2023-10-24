@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 7622316369696226948}
   - component: {fileID: 7622316369696226954}
   - component: {fileID: 7622316369696226958}
-  - component: {fileID: 7622316369696226959}
-  - component: {fileID: 7622316369696226952}
-  - component: {fileID: 7622316369696226953}
   - component: {fileID: 7622316369696226957}
+  - component: {fileID: 7622316369696226959}
+  - component: {fileID: 7622316369696226953}
   - component: {fileID: 1742209751}
   - component: {fileID: 1742209750}
   m_Layer: 0
@@ -129,6 +128,23 @@ MonoBehaviour:
   hpMax: 20
   vidas: 1
   score: 0
+--- !u!114 &7622316369696226957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7622316369696226949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fa9d4dc06597c42879a20cf9f077fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadCaminar: 2
+  rangoAgro: 3
+  puntosDano: 30
+  cerca: 0
+  sangreDanoPrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
 --- !u!70 &7622316369696226959
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -142,25 +158,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00092261616, y: -0.065565884}
-  m_Size: {x: 0.3549653, y: 0.24303357}
+  m_Offset: {x: -0.0009226277, y: -0.07337693}
+  m_Size: {x: 0.3299702, y: 0.24615814}
   m_Direction: 1
---- !u!70 &7622316369696226952
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7622316369696226949}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2, y: 2}
-  m_Direction: 0
 --- !u!50 &7622316369696226953
 Rigidbody2D:
   serializedVersion: 4
@@ -182,21 +182,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7622316369696226957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7622316369696226949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2fa9d4dc06597c42879a20cf9f077fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  honguito: {fileID: 7622316369696226955}
-  cavernicola: {fileID: 0}
-  velocidadCaminar: 2
 --- !u!82 &1742209751
 AudioSource:
   m_ObjectHideFlags: 0
@@ -217,7 +202,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.52179193
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0

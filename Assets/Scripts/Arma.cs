@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Arma : MonoBehaviour
 {
+    public int puntosAtaque = 30;
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
     private EfectosSonoros misSonidos;
@@ -17,14 +18,15 @@ public class Arma : MonoBehaviour
         misSonidos = GetComponent<EfectosSonoros>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject arma = collision.gameObject;
-        if (arma.tag == "Enemigo")
-        {
-            print(arma.name + " golpeó a " + name);
-            Personaje enemigo = arma.GetComponent<Personaje>();
-            enemigo.hacerDano(10, this.gameObject);
+        GameObject otro = collision.gameObject;
+        print(" Arma " + name + " golpeó a " + otro);
+
+        if (otro.tag == "Enemigo")
+        { 
+            Personaje elPerso = otro.GetComponent<Personaje>();
+            elPerso.hacerDano(puntosAtaque, this.gameObject);
             misSonidos.reproducir("danoEne");
         }
 
