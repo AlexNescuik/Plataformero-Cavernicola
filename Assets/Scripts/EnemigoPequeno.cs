@@ -61,49 +61,34 @@ public class EnemigoPequeno : MonoBehaviour
 
         if (miPersonaje.estaVivo())
         {
-
-
-
             Vector3 miPos = this.transform.position;
-
             Vector3 posHeroe = heroeJugador.transform.position;
-
             float distanciaHeroe = (miPos - posHeroe).magnitude;
-
 
             if (distanciaHeroe < rangoAgro)
             {
                 cerca = true;
             }
-
             else
             {
                 cerca = false;
             }
 
-
             if (cerca == true)
             {
                 if (Cavernicola.position.x < Hongo.position.x)
                 {
-                    transform.rotation =
-                    Quaternion.Euler(0, 180, 0);
-                    miCuerpo.velocity =
-                        new Vector3(-velocidadCaminar, 0, 0);
+                    transform.rotation = Quaternion.Euler(0, 180, 0);
+                    miCuerpo.velocity = new Vector3(-velocidadCaminar, 0, 0);
                     miAnimador.SetBool("caminando", true);
                 }
-
                 else if (Hongo.position.x < Cavernicola.position.x)
                 {
-                    transform.rotation =
-                                    Quaternion.Euler(0, 0, 0);
-                    miCuerpo.velocity =
-                        new Vector3(velocidadCaminar, 0, 0);
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                    miCuerpo.velocity = new Vector3(velocidadCaminar, 0, 0);
                     miAnimador.SetBool("caminando", true);
                 }
-
             }
-
             else
             {
                 miAnimador.SetBool("caminando", false);

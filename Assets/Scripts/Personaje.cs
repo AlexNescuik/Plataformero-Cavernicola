@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Personaje : MonoBehaviour
 {
@@ -60,7 +61,16 @@ public class Personaje : MonoBehaviour
             if (hp <= 0)
             {
                 miAnimador.SetTrigger("MORIR");
+                print(name + " murió");
                 vidas--;
+                if (vidas <= 0)
+                {
+                    SceneManager.LoadScene("GameOver");
+                }
+                else
+                {
+                    ReiniciarStage();
+                }
             }
             else
             {
@@ -68,11 +78,24 @@ public class Personaje : MonoBehaviour
             }
         }
     }
-        public void matarInstantaneamente(GameObject quien)
+    public void matarInstantaneamente(GameObject quien)
+    {
+        print(name + " murió instantaneamente por " + quien);
+        hp = 0;
+        miAnimador.SetTrigger("MORIR");
+        if (vidas <= 0)
         {
-            print(name + " murió instantaneamente por " + quien);
-            hp = 0;
-            miAnimador.SetTrigger("MORIR");
+            SceneManager.LoadScene("GameOver");
         }
+        else
+        {
+            ReiniciarStage();
+        }
+    }
 
+    public void ReiniciarStage()
+    {
+        string Nivel1 = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(Nivel1);
+    }
 }

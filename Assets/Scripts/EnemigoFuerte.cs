@@ -55,19 +55,15 @@ public class EnemigoFuerte : MonoBehaviour
         {
             if (Cavernicola.position.x < Hongo.position.x)
             {
-                transform.rotation =
-                Quaternion.Euler(0, 180, 0);
-                miCuerpo.velocity =
-                    new Vector3(-velocidadCaminar, 0, 0);
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+                miCuerpo.velocity = new Vector3(-velocidadCaminar, 0, 0);
                 miAnimador.SetBool("caminando", true);
             }
 
             else if (Hongo.position.x < Cavernicola.position.x)
             {
-                transform.rotation =
-                               Quaternion.Euler(0, 0, 0);
-                miCuerpo.velocity =
-                   new Vector3(velocidadCaminar, 0, 0);
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+                miCuerpo.velocity = new Vector3(velocidadCaminar, 0, 0);
                 miAnimador.SetBool("caminando", true);
             }
         }
