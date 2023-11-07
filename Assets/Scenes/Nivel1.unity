@@ -4106,8 +4106,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 50
   hpMax: 50
-  vidas: 2
   score: 0
+  vidasIniciales: 2
   bloqueado: 0
 --- !u!114 &2049498402
 MonoBehaviour:
@@ -11520,6 +11520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5041529696869243173, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
+      propertyPath: vidasActuales
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5041529696869243180, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
       propertyPath: m_Name
       value: Cavernicola
@@ -11623,7 +11627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5608646273191567481, guid: aac56b7a0ab3dbc4f9998b0cb3d33542, type: 3}
       propertyPath: orthographic size
-      value: 19.058142
+      value: 3.6749291
       objectReference: {fileID: 0}
     - target: {fileID: 5608646273191567481, guid: aac56b7a0ab3dbc4f9998b0cb3d33542, type: 3}
       propertyPath: m_BackGroundColor.a

@@ -8,15 +8,15 @@ public class Personaje : MonoBehaviour
 
     public int hp = 100;
     public int hpMax = 100;
-    public int vidas = 2;
     public int score = 0;
+    public int vidasIniciales = 2;
+    public static int vidas = 2;
 
     public bool bloqueado = false;
 
     private Animator miAnimador;
     private Rigidbody2D miCuerpo;
     private Personaje miPersonaje;
-    public static int vida;
 
 
     // Start is called before the first frame update
@@ -58,18 +58,23 @@ public class Personaje : MonoBehaviour
 
             print(name + " recibe daño de " + puntosDano + " por " + enemigo);
             miAnimador.SetTrigger("DANAR");
+
             if (hp <= 0)
             {
                 miAnimador.SetTrigger("MORIR");
-                print(name + " murió");
-                vidas--;
-                if (vidas <= 0)
+                print(name + " murió por " + enemigo);
+                vidas = vidas - 1;
+
+                if (miPersonaje.tag == "Player")
                 {
-                    SceneManager.LoadScene("GameOver");
-                }
-                else
-                {
-                    ReiniciarStage();
+                    if (vidas <= 0)
+                    {
+                        SceneManager.LoadScene("GameOver");
+                    }
+                    else
+                    {
+                        ReiniciarStage();
+                    }
                 }
             }
             else
@@ -82,14 +87,17 @@ public class Personaje : MonoBehaviour
     {
         print(name + " murió instantaneamente por " + quien);
         hp = 0;
-        miAnimador.SetTrigger("MORIR");
-        if (vidas <= 0)
+        vidas = vidas - 1;
+        if (miPersonaje.tag == "Player")
         {
-            SceneManager.LoadScene("GameOver");
-        }
-        else
-        {
-            ReiniciarStage();
+            if (vidas <= 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+            else
+            {
+                ReiniciarStage();
+            }
         }
     }
 

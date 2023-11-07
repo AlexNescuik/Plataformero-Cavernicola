@@ -15,11 +15,11 @@ public class EnemigoFuerte : MonoBehaviour
 
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
-    private EfectosSonoros misSonidos;
     private GameObject heroeJugador;
 
     public GameObject SangrePrefab;
     public GameObject corazonRotoPrefab;
+    private EfectosSonoros misSonidos;
 
     void Start()
     {
