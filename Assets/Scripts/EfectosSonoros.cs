@@ -28,6 +28,7 @@ public class EfectosSonoros : MonoBehaviour
                 return;
             }
         }
+        print("Sonido no encontrado");
     }
 
     [Serializable]
