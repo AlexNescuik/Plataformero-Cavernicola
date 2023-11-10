@@ -29,7 +29,6 @@ public class EnemigoFuerte : MonoBehaviour
     }
 
     void Update()
-
     {
         Vector3 miPos = this.transform.position;
         Vector3 posHeroe = heroeJugador.transform.position;
