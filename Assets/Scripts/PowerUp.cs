@@ -50,7 +50,7 @@ public class PowerUp : MonoBehaviour
 
         if (elPerso != null)
         {
-            elPerso.velocidadCaminar /= 2;//accede a los atributos de controlador jugador 
+            elPerso.velocidadCaminar /= 2;
         }
     }
 

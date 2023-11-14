@@ -12,7 +12,6 @@ public class ControladorGUI : MonoBehaviour
     public Personaje Villano;
     public Text EtiquetaHPVillano;
     public Image BarraHPVillano;
-    public Image Mouse;
 
     // Start is called before the first frame update
     void Start()
