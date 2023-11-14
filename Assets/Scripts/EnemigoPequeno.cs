@@ -21,6 +21,8 @@ public class EnemigoPequeno : MonoBehaviour
 
     public GameObject SangrePrefab;
     public GameObject corazonRotoPrefab;
+    public GameObject Recompensaprefab;
+    private Personaje enemigo;
     
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,8 +33,6 @@ public class EnemigoPequeno : MonoBehaviour
 
             print(name + " Enemigo cerca " + enemigoP);
             cerca = true;
-
-
         }
     }
 
@@ -51,6 +51,7 @@ public class EnemigoPequeno : MonoBehaviour
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
         miPersonaje = GetComponent<Personaje>();
+        enemigo = GetComponent<Personaje>();
 
         heroeJugador = GameObject.FindGameObjectWithTag("Player");
     }
