@@ -7,6 +7,7 @@ TagManager:
   - Enemigo
   - FxTemporaire
   - Tesore
+  - GameManager
   layers:
   - Default
   - TransparentFX

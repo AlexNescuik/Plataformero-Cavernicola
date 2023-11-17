@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    private Vector3 checkPoint;
     private GameManager gameManager;
-
-    private GameObject otro;
+    private Transform checkPointPos;
 
     private EfectosSonoros misSonidos;
 
     // Start is called before the first frame update
     void Start()
     {
-        checkPoint = transform.position;
+        gameManager = GameObject.FindGameObjectWithTag("GameManager")?.GetComponent<GameManager>();
+        checkPointPos = transform;
         misSonidos = GetComponent<EfectosSonoros>();
     }
 
@@ -31,13 +30,11 @@ public class CheckPoint : MonoBehaviour
 
         if (otro.tag == "Player" && elPerso.estaVivo())
         {
-            print(name + " detectó colisión con " + otro);
-            checkPoint = transform.position;
-            print(elPerso.name + "llegó al checkpoint");
-            GameManager.position
+            print(elPerso.name + " llegó al checkpoint");
+
+            GameManager.ultimoCheckPoint = transform.position;
+
             misSonidos.reproducir("CheckPoint");
         }
     }
-
-
 }
