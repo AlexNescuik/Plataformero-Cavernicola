@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5608646273191567480}
   - component: {fileID: 5608646273191567481}
   - component: {fileID: 5608646273191567482}
-  - component: {fileID: 5608646273191567487}
+  - component: {fileID: 3490967078280975776}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -85,7 +85,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5608646273191567483}
   m_Enabled: 1
---- !u!114 &5608646273191567487
+--- !u!114 &3490967078280975776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5608646273191567483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61c898de197cd8d4e89d8dea43a682cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a7603bf141971d4885462f2bfe48efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cavernicola: {fileID: 0}
+  elPersonaje: {fileID: 0}
+  offsetProf: -5
+  offsetVertical: -1
+  velocidadAlcance: 2
