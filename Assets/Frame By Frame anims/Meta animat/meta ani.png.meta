@@ -1,0 +1,1333 @@
+fileFormatVersion: 2
+guid: 4ac097f349edce148a0f707db1b58250
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: meta ani_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2402
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6a7549fb3e42c46b587fa57d560ec9
+      internalID: -669193872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 2402
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0c5b29826d7cc4592b3e8158610f54
+      internalID: -1426573370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_2
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2392
+        width: 388
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a19b26ba91fd0e49be4d8ad4b028842
+      internalID: 1290027267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_3
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 2396
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63de2510f2898814fb086621bacb7c53
+      internalID: -1154357423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_4
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 2396
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2bbd946b80408489804b696e14a627
+      internalID: 192982390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_5
+      rect:
+        serializedVersion: 2
+        x: 2165
+        y: 2392
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af23f54f07e09a4c918017f4631da9c
+      internalID: 1028410947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_6
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 2392
+        width: 388
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd709fb7720f6048b65d0aaac85062d
+      internalID: -784795986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_7
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 2392
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3ca8ba6ee881d4081755e2dae0f1e3
+      internalID: -2084155163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_8
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 2398
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38134e2f36e6e724ebacd2e4fadaa422
+      internalID: 538615789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2003
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd56d171b6391b646933e24e48422a8f
+      internalID: -1398039672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2009
+        width: 388
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf526d3487211c942928c2cee2aae600
+      internalID: -1874610672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_11
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1999
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7c4ea8c2238b34ca1dc9ffea22b259
+      internalID: 883895756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_12
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 1989
+        width: 387
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee3e3ebaaaea11488b2a045fd8753e8
+      internalID: -220771457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_13
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 1989
+        width: 388
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67f447855f4d9c4095b7ffdf74d2a24
+      internalID: 4668905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_14
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 1986
+        width: 388
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf99d98b7361e8b4299de175c8d4f455
+      internalID: 1473068350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_15
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 1986
+        width: 388
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da7b381bccf2a041b49ef25a24851b9
+      internalID: -93011900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_16
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 1986
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4eef0b6a8a5dbd4baa3e9ed8f8b4c7c
+      internalID: -74664765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_17
+      rect:
+        serializedVersion: 2
+        x: 3464
+        y: 1995
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c479dfc6fedd44686f5e6cbeb4c4a7
+      internalID: 870184863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1577
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a08e89d1f8b6e479734ce6e9b3f2f1
+      internalID: 1684082179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_19
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1573
+        width: 388
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a536f10cbcf0d4793197953affce99
+      internalID: -2083820836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_20
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1597
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c725eb45e5b6cfb4cb070d1d32a4e5e9
+      internalID: 174045053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_21
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 1601
+        width: 388
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcad637afbe0a24591f4bb04f68c796
+      internalID: 1948930587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_22
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 1597
+        width: 386
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc70fd3ec885af49a89851917116a3d
+      internalID: 210672244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_23
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 1597
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e2fbae43dbf284b90427369eb48704
+      internalID: 1843438216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_24
+      rect:
+        serializedVersion: 2
+        x: 2626
+        y: 1587
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e60a9d622a3e0459cded6a62e782b5
+      internalID: 1953604941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_25
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 1591
+        width: 386
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e7a8432f902d448bcc56eb451b05e1
+      internalID: 1187922760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_26
+      rect:
+        serializedVersion: 2
+        x: 3493
+        y: 1597
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e55fba5c2d6bcb4aab224a97d458d57
+      internalID: -1812631055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_27
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1175
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c68e36bbbffb8545b416a9af7fb7caa
+      internalID: -793941916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_28
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1169
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee6cb0e66130594986f98a12bc541ea
+      internalID: 1068068348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_29
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1155
+        width: 388
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a32cdbf3747cae458717b2bf4edd684
+      internalID: 629997993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_30
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1155
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624632883b0aa8b40b3936bb6feaff65
+      internalID: 748333955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_31
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 1151
+        width: 388
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa18bcd958048d40836cb57ae16f668
+      internalID: 35616800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_32
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 1155
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23510d819916a6e468d534a4d30c12e3
+      internalID: -358916480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_33
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 1165
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0d72913e5df594b83e9230b1f72a60
+      internalID: -1999332523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_34
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 1155
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8934a2861c45192438068631acfff489
+      internalID: -2142539740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_35
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 1161
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d07b4368d99f84fb631a389205e618
+      internalID: -1591714716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_36
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 810
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822b4f058c89eea44bbfc9ce70a91be5
+      internalID: -1963878429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_37
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 816
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6070a77c60db346a91c5629e277959
+      internalID: -1268694688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_38
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 819
+        width: 388
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123f0acd5a8533349aa8c9cfb41459f4
+      internalID: 675619718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_39
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 816
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5590f6ed46f918488fce4b89495f925
+      internalID: -1489626625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_40
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 790
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c87d32de2d68a418f6f9e85a064f7a
+      internalID: -1497636829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_41
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 782
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8946e8a337595449492ada51769530
+      internalID: -1868613952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_42
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 804
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07b30e39185b234eace28128c80f380
+      internalID: -65205704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_43
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 819
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc506941fb82de24198b3850ff6b1c95
+      internalID: 1323198930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_44
+      rect:
+        serializedVersion: 2
+        x: 3501
+        y: 776
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0aee13cdcbf16469727d01f8602d0c
+      internalID: 150287295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_45
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 444
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1889c76826609474686a67d5a9e9f605
+      internalID: 1366996347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_46
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 440
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b73a9ea26a0fb4aae479d64e776697
+      internalID: 2018614243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_47
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 435
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ef8d8480e52494a8d127aa5ff1b6fc
+      internalID: 1508587330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_48
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 431
+        width: 388
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c95d3e10c28cbe4e8f0b9de3fccf990
+      internalID: -368653522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_49
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 435
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190c2a96a2c8fe94e94343020abb0b1f
+      internalID: 1317933489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_50
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 435
+        width: 388
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e684d5ab187b98049b24d1c2d27ad681
+      internalID: -1008546105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_51
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 440
+        width: 388
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937c7a9916f4efa4aa8487d11165e54d
+      internalID: -1049276137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_52
+      rect:
+        serializedVersion: 2
+        x: 3081
+        y: 440
+        width: 389
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88162a2e0b6ead1439f13891521f880b
+      internalID: 1940694858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_53
+      rect:
+        serializedVersion: 2
+        x: 3493
+        y: 435
+        width: 389
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c53be24186ef234fae41a167f5becc8
+      internalID: 782593312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meta ani_54
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 79
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdc43eabae8abe43b7cc3ae7f9d9640
+      internalID: -2086893312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      meta ani_0: -669193872
+      meta ani_1: -1426573370
+      meta ani_10: 1290027267
+      meta ani_11: -1154357423
+      meta ani_12: 192982390
+      meta ani_13: 1028410947
+      meta ani_14: -784795986
+      meta ani_15: -2084155163
+      meta ani_16: 538615789
+      meta ani_17: -1398039672
+      meta ani_18: -1874610672
+      meta ani_19: 883895756
+      meta ani_2: -220771457
+      meta ani_20: 4668905
+      meta ani_21: 1473068350
+      meta ani_22: -93011900
+      meta ani_23: -74664765
+      meta ani_24: 870184863
+      meta ani_25: 1684082179
+      meta ani_26: -2083820836
+      meta ani_27: 174045053
+      meta ani_28: 1948930587
+      meta ani_29: 210672244
+      meta ani_3: 1843438216
+      meta ani_30: 1953604941
+      meta ani_31: 1187922760
+      meta ani_32: -1812631055
+      meta ani_33: -793941916
+      meta ani_34: 1068068348
+      meta ani_35: 629997993
+      meta ani_36: 748333955
+      meta ani_37: 35616800
+      meta ani_38: -358916480
+      meta ani_39: -1999332523
+      meta ani_4: -2142539740
+      meta ani_40: -1591714716
+      meta ani_41: -1963878429
+      meta ani_42: -1268694688
+      meta ani_43: 675619718
+      meta ani_44: -1489626625
+      meta ani_45: -1497636829
+      meta ani_46: -1868613952
+      meta ani_47: -65205704
+      meta ani_48: 1323198930
+      meta ani_49: 150287295
+      meta ani_5: 1366996347
+      meta ani_50: 2018614243
+      meta ani_51: 1508587330
+      meta ani_52: -368653522
+      meta ani_53: 1317933489
+      meta ani_54: -1008546105
+      meta ani_6: -1049276137
+      meta ani_7: 1940694858
+      meta ani_8: 782593312
+      meta ani_9: -2086893312
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

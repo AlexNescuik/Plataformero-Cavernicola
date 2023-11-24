@@ -8,6 +8,7 @@ TagManager:
   - FxTemporaire
   - Tesore
   - GameManager
+  - Meta
   layers:
   - Default
   - TransparentFX
