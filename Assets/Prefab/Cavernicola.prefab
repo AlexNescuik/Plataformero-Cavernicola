@@ -444,8 +444,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 100
   hpMax: 100
-  vidas: 2
   score: 100
+  vidasIniciales: 2
+  bloqueado: 0
 --- !u!82 &1184506463
 AudioSource:
   m_ObjectHideFlags: 0
@@ -556,6 +557,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   misEfectos:
   - accion: salto
+    sonido: {fileID: 8300000, guid: b938ac185260fe5459c23833c47f9ade, type: 3}
+  - accion: Yippie
     sonido: {fileID: 8300000, guid: b938ac185260fe5459c23833c47f9ade, type: 3}
 --- !u!1 &9200250807063981724
 GameObject:

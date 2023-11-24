@@ -361,11 +361,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1075486590221380822, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 70.059
+      value: 143.9003
       objectReference: {fileID: 0}
     - target: {fileID: 1075486590221380822, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 49.694
+      value: 102.0737
       objectReference: {fileID: 0}
     - target: {fileID: 1075486590221380822, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_LocalRotation.w
@@ -385,11 +385,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1075486590221380822, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.5672
+      value: -1.7648
       objectReference: {fileID: 0}
     - target: {fileID: 1075486590221380822, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -69.956
+      value: -73.0283
       objectReference: {fileID: 0}
     - target: {fileID: 1075486590221380822, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -406,7 +406,7 @@ PrefabInstance:
     - target: {fileID: 1075486590221380823, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 734272859096889653, guid: c8380d8b23f91724ca7868d6a4453fe9, type: 3}
+      objectReference: {fileID: 6767266734697148751, guid: b10aba54aecddfa4a955158f5746f0f4, type: 3}
     - target: {fileID: 1075486590221380823, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -457,7 +457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1075486590477354012, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_Name
-      value: Health bar Catto
+      value: Health bar Villano
       objectReference: {fileID: 0}
     - target: {fileID: 1075486590477354013, guid: 781ce030fcbdcfc40aca144d2c02fc43, type: 3}
       propertyPath: m_Pivot.x
@@ -2511,7 +2511,7 @@ MonoBehaviour:
   Heroe: {fileID: 1184506456}
   EtiquetaHPHeroe: {fileID: 329313916}
   BarraHPHeroe: {fileID: 1974533210}
-  Villano: {fileID: 0}
+  Villano: {fileID: 1579031123}
   EtiquetaHPVillano: {fileID: 1614094589}
   BarraHPVillano: {fileID: 1791844772}
 --- !u!1 &981367981
@@ -3583,6 +3583,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32b89e88ea959d24694025fb2b95ff71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1579031123 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1389730624396107391, guid: 0ba3f5c798a4f174ab021bdedcd73d7e, type: 3}
+  m_PrefabInstance: {fileID: 536371795}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc645675023eee941beaba0135b00300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1614094589 stripped
@@ -11732,22 +11743,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1184506462, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
-      propertyPath: misEfectos.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184506462, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
-      propertyPath: misEfectos.Array.data[1].accion
-      value: Yippie
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184506462, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
-      propertyPath: misEfectos.Array.data[1].sonido
-      value: 
-      objectReference: {fileID: 8300000, guid: b938ac185260fe5459c23833c47f9ade, type: 3}
-    - target: {fileID: 5041529696869243173, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
-      propertyPath: vidasActuales
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5041529696869243180, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
       propertyPath: m_Name
       value: Cavernicola
@@ -11758,11 +11753,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5041529696869243182, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 71.4
+      value: 71.85
       objectReference: {fileID: 0}
     - target: {fileID: 5041529696869243182, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.32
+      value: -5.29
       objectReference: {fileID: 0}
     - target: {fileID: 5041529696869243182, guid: 5aff7937e66c8a3449c199c679d233e5, type: 3}
       propertyPath: m_LocalPosition.z
