@@ -26,7 +26,7 @@ public class Meta : MonoBehaviour
         {
             GameObject otro = collision.gameObject;
             Personaje elPerso = otro.GetComponent<Personaje>();
-            print(name + " llegó a la meta!! " + otro);
+            print(otro + " llegó a la meta!! ");
             miAnimador.SetTrigger("Meta");
             misSonidos.reproducir("Meta");
         }
