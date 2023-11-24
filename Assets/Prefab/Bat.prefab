@@ -143,9 +143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 30
   hpMax: 30
+  vidas: 1
   score: 0
-  vidasIniciales: 2
-  bloqueado: 0
 --- !u!114 &5841645179017778653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,10 +160,9 @@ MonoBehaviour:
   Cavernicola: {fileID: 0}
   Hongo: {fileID: 5841645179017778652}
   velocidadCaminar: 2
-  rangoAgro: 2
   SangrePrefab: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
   corazonRotoPrefab: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
-  Recompensaprefab: {fileID: 3542460722512750119, guid: 6000b9d440c89d746916f3942fd37715, type: 3}
+  rangoAgro: 2
 --- !u!82 &5841645179017778651
 AudioSource:
   m_ObjectHideFlags: 0
